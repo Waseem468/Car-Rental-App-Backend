@@ -1,11 +1,11 @@
 const express = require("express")
 const app = express();
 const cors = require("cors")
-require("./DB/server")
-const CarRouter = require("./Routers/CarRouter")
-const UserRouter = require("./Routers/UserRouter")
-const AdminRouter = require("./Routers/AdminRouters")
-const OrderRouter = require("./Routers/OrderRouter")
+require("./src/DB/server")
+const CarRouter = require("./src/Routers/CarRouter")
+const UserRouter = require("./src/Routers/UserRouter")
+const AdminRouter = require("./src/Routers/AdminRouters")
+const OrderRouter = require("./src/Routers/OrderRouter")
 
 app.use(express.json())
 app.use(cors());
